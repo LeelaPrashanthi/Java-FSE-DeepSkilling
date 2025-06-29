@@ -1,0 +1,3 @@
+22:20:38.407 [main] DEBUG c.e.logging.AppenderLoggerExample - Debug message: Application started
+22:20:38.410 [main] INFO  c.e.logging.AppenderLoggerExample - Info message: This will be logged to console and file
+22:20:38.410 [main] ERROR c.e.logging.AppenderLoggerExample - Error message: Something went wrong

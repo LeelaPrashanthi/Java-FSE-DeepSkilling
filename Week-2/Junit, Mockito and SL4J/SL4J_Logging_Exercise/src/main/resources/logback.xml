@@ -1,0 +1,28 @@
+<configuration>
+
+    <!-- Console Appender: logs to IntelliJ's Run Console -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- Log pattern format for console -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- File Appender: logs saved to 'logs/app.log' file -->
+    <appender name="file" class="ch.qos.logback.core.FileAppender">
+        <!-- Output file name and path -->
+        <file>logs/app.log</file>
+        <append>true</append> <!-- Append to file if it already exists -->
+        <encoder>
+            <!-- Log pattern format for file -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root Logger config -->
+    <root level="debug"> <!-- Capture all messages at debug level and above -->
+        <appender-ref ref="console" />
+        <appender-ref ref="file" />
+    </root>
+
+</configuration>
