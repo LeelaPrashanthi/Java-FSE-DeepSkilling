@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="employeeList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <bean class="com.example.employeeservice.model.Employee">
+                    <property name="id" value="1"/>
+                    <property name="name" value="John Doe"/>
+                    <property name="department" value="HR"/>
+                    <property name="email" value="john.doe@example.com"/>
+                </bean>
+                <bean class="com.example.employeeservice.model.Employee">
+                    <property name="id" value="2"/>
+                    <property name="name" value="Jane Smith"/>
+                    <property name="department" value="Finance"/>
+                    <property name="email" value="jane.smith@example.com"/>
+                </bean>
+                <bean class="com.example.employeeservice.model.Employee">
+                    <property name="id" value="3"/>
+                    <property name="name" value="Alice Johnson"/>
+                    <property name="department" value="IT"/>
+                    <property name="email" value="alice.johnson@example.com"/>
+                </bean>
+                <!-- New Employees -->
+                <bean class="com.example.employeeservice.model.Employee">
+                    <property name="id" value="4"/>
+                    <property name="name" value="Bob Williams"/>
+                    <property name="department" value="Marketing"/>
+                    <property name="email" value="bob.williams@example.com"/>
+                </bean>
+                <bean class="com.example.employeeservice.model.Employee">
+                    <property name="id" value="5"/>
+                    <property name="name" value="Carol Lee"/>
+                    <property name="department" value="Sales"/>
+                    <property name="email" value="carol.lee@example.com"/>
+                </bean>
+                <bean class="com.example.employeeservice.model.Employee">
+                    <property name="id" value="6"/>
+                    <property name="name" value="David Kim"/>
+                    <property name="department" value="Finance"/>
+                    <property name="email" value="david.kim@example.com"/>
+                </bean>
+                <bean class="com.example.employeeservice.model.Employee">
+                    <property name="id" value="7"/>
+                    <property name="name" value="Eva Brown"/>
+                    <property name="department" value="Marketing"/>
+                    <property name="email" value="eva.brown@example.com"/>
+                </bean>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="departmentList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <value>HR</value>
+                <value>Finance</value>
+                <value>IT</value>
+                <value>Marketing</value>
+                <value>Sales</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans> 
