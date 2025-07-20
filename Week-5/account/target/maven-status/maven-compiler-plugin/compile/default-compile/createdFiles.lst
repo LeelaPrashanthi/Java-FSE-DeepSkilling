@@ -1,0 +1,5 @@
+com\cognizant\account\AccountApplication.class
+com\cognizant\account\repository\AccountRepository.class
+com\cognizant\account\entity\Account.class
+com\cognizant\account\service\AccountService.class
+com\cognizant\account\controller\AccountController.class
