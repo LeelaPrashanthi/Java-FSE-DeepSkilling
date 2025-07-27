@@ -1,0 +1,17 @@
+.mydiv {
+  text-align: center;
+  margin-top: 40px;
+}
+
+h1 {
+  color: green;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+th {
+  color: green;
+}
